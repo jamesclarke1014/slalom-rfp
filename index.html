@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>Cross-Market CE - RFP Retrieve</title>
+      <meta name="generator" content="Bootply" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <style type="text/css">
+        html { 
+          background: url(http://www.neyralaw.com/wp-content/uploads/2012/07/tokyo-blue-background-4547.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        select option {color: #555;}
+        select option:first-child { color: #999; }
+        select.empty { color: #999; }
+        /* Hidden placeholder */
+        select option[disabled]:first-child { display: none; }
+        .modal-footer {   border-top: 0px; }
+      </style>
+    <!-- script references -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>    
+      <script type="text/javascript">
+      
+      </script>
+    </head>
+    <body>
+  <!--login modal-->
+  <div id="formModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="text-center"><img src="http://image.s7.exacttarget.com/lib/fe9813727760027d77/m/1/SlalomBlueLogo.png"/></h1>
+            <h1 class="text-center">Cross-Market Answer RFP Repository</h1>
+            <div class="text-center">Select <strong>Topic</strong> then and if needed <strong>Product</strong> to lookup related Q/A's.</div>
+        </div>
+        <div class="modal-body">
+            <form class="form col-md-12 center-block" action="search.php" method="GET">
+              <div class="form-group">
+                <select class="form-control input-lg" id="Topic" name="Topic" required="required">
+                  <option selected="selected" disabled="disabled">Topic</option>
+                  <option value="Practice Experience">Practice Experience</option>
+                  <option value="Staffing">Staffing</option>
+                  <option value="Project Management">Project Management</option>
+                  <option value="Working Together">Working Together</option>
+                  <option value="Delivery Process">Delivery Process</option>
+                  <option value="Terms and Conditions">Terms and Conditions</option>
+                  <option value="Slalom Profile">Slalom Profile</option>
+                  <option value="Executive Summary">Executive Summary</option>
+                  <option value="Training">Training</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control input-lg" id="Product" name="Product" >
+                  <option selected="selected" disabled="disabled">Product</option>
+                  <option value="None">None</option>
+                  <option value="Sitecore">Sitecore</option>
+                  <option value="Salesforce">Salesforce</option>
+                  <option value="Dynamics">Dynamic</option>
+                  <option value="General">General</option>
+                </select>
+              </div>            
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Search"/>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="col-md-12"></div> 
+        </div>
+    </div>
+    </div>
+  </div>
+  </body>
+  </html>
